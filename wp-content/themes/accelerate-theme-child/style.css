@@ -80,3 +80,19 @@ div.case-study-images img{
   margin-bottom:50px;
   border:1px solid #dddddd;
 }
+ul {
+  list-style: none;
+
+}
+
+li{
+  display: inline block;
+  float:left;
+  margin-left: 110px;
+
+}
+h4{
+  font-weight:bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}

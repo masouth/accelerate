@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the archive of case studies
+ * The template for displaying case study archives
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -17,11 +17,13 @@ get_header(); ?>
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-        <p>is this working???</p>
-        <?php the_content(); ?>
+        <p> is this working??</p>
+				<?php the_content(); ?>
 			<?php endwhile; // end of the loop. ?>
+		</div><!-- .main-content -->
 
-    </div><!-- .main-content -->
+		<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
