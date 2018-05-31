@@ -67,18 +67,21 @@ article.case-study{
 
 aside.case-study-sidebar{
   float:left;
-  width:300px;
+  width:400px;
 }
 
 div.case-study-images{
   float:left;
-  width:605px;
+  width:500px;
   margin: 0 40px 0 0;
 }
 
 div.case-study-images img{
-  margin-bottom:50px;
+  width:100%;
+  height:auto;
+  margin-top:40px;
   border:1px solid #dddddd;
+  float:right;
 }
 ul {
   list-style: none;
@@ -95,4 +98,11 @@ h4{
   font-weight:bold;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+/*social media nav*/
+
+.social-media-navigation ul li{
+  display:inline-block;
+  margin-left:50px;
 }

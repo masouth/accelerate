@@ -26,24 +26,21 @@ get_header(); ?>
         $image_3 = get_field ('image_3');?>
 
    <article class="case-study">
-<aside class="case-study-sidebar">
+   <aside class="case-study-sidebar">
           <h2><?php the_title(); ?></h2>
           <h4><?php echo $services; ?></h4>
           <h6>Client: <?php echo $client; ?></h6>
 
           <?php the_content(); ?>
+          <p><strong><a href="<?php echo $link; ?>">Visit Live Site ›</a></strong></p>
 
-          <p><a href="<?php echo $link; ?>">Visit Live Site ›</a></p>
-
-
+    </aside>
+    </article>
     <div class="case-study-images">
-      
-      <img src="<?php echo $image_1; ?>" />
-      <img src="<?php echo $image_2; ?>" />
-      <img src="<?php echo $image_3; ?>" />
+      <?php if(image_1){
+         echo wp_get_attachment_image($image_1, $size);}?>
     </div>
-   </aside>
-  </article>
+  
 
 <?php endwhile; ?>
   </div>
