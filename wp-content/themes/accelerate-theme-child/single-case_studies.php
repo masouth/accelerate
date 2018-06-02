@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying a single case study
+ * The template for displaying a single case study - and a comment to trigger a commit
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -40,7 +40,7 @@ get_header(); ?>
       <?php if(image_1){
          echo wp_get_attachment_image($image_1, $size);}?>
     </div>
-  
+
 
 <?php endwhile; ?>
   </div>
