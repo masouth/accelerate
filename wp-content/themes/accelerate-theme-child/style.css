@@ -104,5 +104,16 @@ h4{
 
 .social-media-navigation ul li{
   display:inline-block;
-  margin-left:50px;
+  margin-left:30px;
+}
+
+/*contact submit Button*/
+
+nf-field input[type="button"]{
+background-color:#45ac9d;
+float:right;
+}
+
+nf-field input[type="text" name="name"]{
+  width:50%;
 }
