@@ -13,8 +13,8 @@
 
 get_header(); ?>
 
-<div id="primary" class="home-page hero-content">
-  <h2>Accelerate is a strategy and ,arketing agency<br> located in the heart og NYC. Our goal is to build<br>
+<div id="about-page" class="home-page hero-content">
+  <h2>Accelerate is a strategy and marketing agency<br> located in the heart of NYC. Our goal is to build<br>
     businesses by making our clients visible and <br>
     making their customers smile.</h2>
 </div>
@@ -23,22 +23,33 @@ get_header(); ?>
     <h4>our services</h4>
     <p> We take pride in our clients and the content we create for them. <br>
      Here is a brief overview of our offered services.</p>
+</div>
 
+<div class="acf">
   <?php query_posts('post_type=about'); ?>
   <?php while ( have_posts() ) : the_post();
-    $size = "full";
+    $size = "medium";
     $title = get_field('title');
     $image = get_field ('image');?>
-  
-  <div class="about-images">
+
+    <article class="about">
+    <aside class="about-sidebar">
+           <h2><?php the_title(); ?></h2>
+           <?php the_content(); ?>
+
+
+</aside>
+</article>
+
   <?php if(image_1){
      echo wp_get_attachment_image($image, $size);}?>
-   </div>
-  <? php endwhile; ?>
+
+  <?php endwhile; ?>
+</div>
+<div class="interested">
+<h3> Interested in working with us?</h3>
+<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 
 
-		</div><!-- .main-content -->
-	</div><!-- #primary -->
-
-	<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
+</div>
 <?php get_footer(); ?>
