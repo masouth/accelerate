@@ -29,15 +29,15 @@ function create_custom_post_types(){
 		'rewrite' => array( 'slug' => 'case-studies'),
 	)
 );
-register_post_type( 'our_services',
+register_post_type( 'about',
 	array(
 		'labels' => array (
-			'name' => __ ( 'Our Services' ),
-			'singular_name' => __	( 'Service' )
+			'name' => __ ( 'About' ),
+			'singular_name' => __	( 'About' )
 	),
 	'public' => true,
 	'has_archive' => false,
-	'rewrite' => array( 'slug' => 'our_services'),
+	'rewrite' => array( 'slug' => 'about'),
 )
 );
 
