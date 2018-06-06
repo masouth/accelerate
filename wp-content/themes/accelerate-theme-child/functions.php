@@ -29,6 +29,18 @@ function create_custom_post_types(){
 		'rewrite' => array( 'slug' => 'case-studies'),
 	)
 );
+register_post_type( 'our_services',
+	array(
+		'labels' => array (
+			'name' => __ ( 'Our Services' ),
+			'singular_name' => __	( 'Service' )
+	),
+	'public' => true,
+	'has_archive' => false,
+	'rewrite' => array( 'slug' => 'our_services'),
+)
+);
+
 }
 add_action( 'init', 'create_custom_post_types');
 // Defines custom markup for post comments
