@@ -3,24 +3,20 @@
 
 
 
+div.about-images img{
+  width:100%;
+  height:auto;
+  margin-top:40px;
+  border:1px solid #dddddd;
+  float:right;
+}
 
-<?php query_posts('post_type= our_services'); ?>
-<?php while ( have_posts() ) : the_post();
-  $image_1 = get_field("image_1");
- $size = "full";
- $our_services = get_field('our_services');?>
+article.about{
+  margin:40px 0 0;
+}
 
- <article class="service">
- <aside class="service-sidebar">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <h4><?php echo $our_services; ?></h4>
-
-       <?php the_excerpt(); ?>
-   </aside>
-
-  <div class="service-images">
-    <a href="<?php the_permalink(); ?>">
-  <?php if(image_1){
-     echo wp_get_attachment_image($image_1, $size);
-   }?>
- </a>
+aside.about-sidebar{
+  float:left;
+  width:60%;
+  margin-left:5%;
+  display:flex;

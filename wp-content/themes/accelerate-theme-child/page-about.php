@@ -25,7 +25,7 @@ get_header(); ?>
      Here is a brief overview of our offered services.</p>
 </div>
 
-<div class="acf">
+<div class="acf clearfix">
   <?php query_posts('post_type=about'); ?>
   <?php while ( have_posts() ) : the_post();
     $size = "medium";
@@ -36,20 +36,18 @@ get_header(); ?>
     <aside class="about-sidebar">
            <h2><?php the_title(); ?></h2>
            <?php the_content(); ?>
-
-
-</aside>
+ </aside>
 </article>
 
   <?php if(image_1){
      echo wp_get_attachment_image($image, $size);}?>
 
   <?php endwhile; ?>
-</div>
-<div class="interested">
+
+<div class="interested clearfix">
 <h3> Interested in working with us?</h3>
 <a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 
-
+ </div>
 </div>
 <?php get_footer(); ?>

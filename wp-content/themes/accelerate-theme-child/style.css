@@ -129,22 +129,31 @@ text-align:center;
 }
 
 .main-content p{
-
   text-align:center;
 }
+
+
+
+.acf section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 .acf {
-  float:left;
+  flex-wrap:wrap;
+  display:flex;
+}
+
+.clearfix{
+  overflow:auto;
 }
 
 article.about{
-  margin:40px 0 0;
+  width:65%;
 }
 
 aside.about-sidebar{
   float:left;
-  width:45%;
   margin-left:5%;
-}
 
 
 div.about-images img{
