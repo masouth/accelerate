@@ -35,6 +35,12 @@ Text Domain:  accelerate-theme-child
 	background: #45acd9;
 }
 
+.featured-work .site-content{
+  display:inline-block;
+  float:right;
+}
+
+
 .blog-post {
   width:50%;
   float:left;
@@ -162,25 +168,48 @@ figure {
   margin-top:70px;
   max-height: 230px;
 }
+ /*404*/
 
+ #not-found h1{
+   font-size: 1.2em;
+ }
 
+#not-found p{
+  margin-bottom:-2%
+}
+
+#not-found{
+  text-align: center;
+
+}
 .interested{
   margin-top:5%;
   border-top: 1px solid #bfbfbf;
+  max-width:950px;
+  text-align: center;
+  padding-left:4%;
+  margin-left:17%;
 }
 
 
 .interested h3{
   text-transform: uppercase;
-  margin-left:30%;
+
 }
 
 .interested .button{
-  margin-left:60%;
 
 }
+
+
 /*.site-footer {
 	border-top: 1px solid #bfbfbf;
 	padding-top: 2em;
 	margin-bottom: 4em;
 }*/
+
+
+/*front-page override*/
+.home .featured-work{
+  display:block;
+}

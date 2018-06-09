@@ -27,15 +27,13 @@ get_header(); ?>
 	<section class= "featured-work">
 		<div class ="site-content">
 			<h4>Featured Work</h4>
-		</div>
 
 	<ul class="homepage-featured-work">
   <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 	  <?php while ( have_posts() ) : the_post();
 			 $image_1 = get_field("image_1");
-	     $size = "medium";
+	     $size = "medium";?>
 
-?>
 		<li class="individual-featured-work">
 		<figure>
 				<?php echo wp_get_attachment_image($image_1, $size); ?>
@@ -46,7 +44,7 @@ get_header(); ?>
 	<?php endwhile; //end of the loop ?>
 	<?php wp_reset_query();//resets the altered query back to the original ?>
 </ul>
-
+</div>
 	</section>
 
 	<section class="recent posts">
@@ -59,7 +57,14 @@ get_header(); ?>
      <?php the_excerpt(); ?>
 <?php endwhile; ?>
 
+<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+</div>
+<?php endif; ?>
+
 <?php wp_reset_query();//end of the loop ?>
+</div>
 </div>
 </div>
 </section>
