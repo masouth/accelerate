@@ -35,11 +35,24 @@ Text Domain:  accelerate-theme-child
 	background: #45acd9;
 }
 
-.featured-work .site-content{
+/*.featured-work .site-content{
   display:inline-block;
-  float:right;
+  margin-right:-15px;
+}
+*/
+.homepage-featured-work ul{
+display:inline-block;
+
 }
 
+.individual-featured-work li{
+  display:block;
+  margin-right:-10%;
+}
+
+.individual-featured-work h3{
+  margin-left:20%;
+}
 
 .blog-post {
   width:50%;
@@ -66,14 +79,27 @@ Text Domain:  accelerate-theme-child
   text-transform: uppercase;
 }
 /*case study*/
+.main-content{
+  display:block;
+}
+
+.site-content{
+  width:90%;
+  max-width:960px;
+  margin:0 auto;
+}
 
 article.case-study{
-  margin:40px 0 0;
+margin:40px 0 0;
+display:block;
+vertical-align: baseline;
 }
 
 aside.case-study-sidebar{
-  float:left;
-  width:400px;
+float:left;
+width:400px;
+display:block;
+vertical-align: baseline;
 }
 
 div.case-study-images{
@@ -87,8 +113,10 @@ div.case-study-images img{
   height:auto;
   margin-top:40px;
   border:1px solid #dddddd;
-  float:right;
+  float:left;
 }
+
+
 ul {
   list-style: none;
 
@@ -104,8 +132,15 @@ h4{
   font-weight:bold;
   font-size: 18px;
   text-transform: uppercase;
+  float:left;
+}
+h6{
+  float:left;
 }
 
+p{
+  float:left;
+}
 /*social media nav*/
 
 .social-media-navigation ul li{
@@ -210,6 +245,6 @@ figure {
 
 
 /*front-page override*/
-.home .featured-work{
+/*.home .featured-work{
   display:block;
-}
+}*/

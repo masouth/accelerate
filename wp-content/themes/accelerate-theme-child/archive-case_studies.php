@@ -14,8 +14,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
+		<div id="main-content" class="site-main-clearfix">
+			<div id="primary" class="site-content">
+				<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post();
        $image_1 = get_field("image_1");
  	     $size = "medium";
@@ -32,7 +33,7 @@ get_header(); ?>
 
               <p><strong><a href="<?php the_permalink(); ?>">View Project ›</a></strong></p>
          </aside>
-
+       
         <div class="our-service-images">
           <a href="<?php the_permalink(); ?>">
         <?php if(image_1){

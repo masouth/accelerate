@@ -1,3 +1,4 @@
+.com
 <?php
 /**
  * The template for displaying the homepage
@@ -27,7 +28,7 @@ get_header(); ?>
 	<section class= "featured-work">
 		<div class ="site-content">
 			<h4>Featured Work</h4>
-
+ </div>
 	<ul class="homepage-featured-work">
   <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 	  <?php while ( have_posts() ) : the_post();
@@ -43,8 +44,7 @@ get_header(); ?>
   </li>
 	<?php endwhile; //end of the loop ?>
 	<?php wp_reset_query();//resets the altered query back to the original ?>
-</ul>
-</div>
+   </ul>
 	</section>
 
 	<section class="recent posts">
@@ -64,9 +64,8 @@ get_header(); ?>
 <?php endif; ?>
 
 <?php wp_reset_query();//end of the loop ?>
+  </div>
+ </section>
 </div>
-</div>
-</div>
-</section>
 
 <?php get_footer(); ?>
