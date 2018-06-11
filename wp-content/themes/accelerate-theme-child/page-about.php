@@ -19,7 +19,7 @@ get_header(); ?>
     making their customers smile.</h2>
 </div>
 
-<div class="main-content" role="main">
+<div class="about-main-content" role="main">
     <h4>our services</h4>
     <p> We take pride in our clients and the content we create for them. <br>
      Here is a brief overview of our offered services.</p>
